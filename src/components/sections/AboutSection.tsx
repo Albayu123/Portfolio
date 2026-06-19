@@ -19,7 +19,7 @@ export default function AboutSection() {
         <div className="md:col-span-5 flex justify-center">
           <div className="relative group w-full max-w-[360px] aspect-square rounded-3xl overflow-hidden border-2 border-dashed transition-all duration-500 hover:border-brand-lime/50 border-black/10 bg-brand-lightSurface dark:border-white/10 dark:bg-brand-darkSurface">
             <img
-              src="profil.jpg"
+              src="/images/profile/profil.jpg"
               alt={`${personalInfo.name} Portrait`}
               className="w-full h-full object-cover transition-all duration-700 ease-out filter grayscale group-hover:grayscale-0 group-hover:scale-105"
               onError={(e) => {
