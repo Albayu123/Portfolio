@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-header: var(--font-plus-jakarta-sans), sans-serif;
+
+  --color-brand-lime: #98CD00;
+  --color-brand-darkBg: #1C1C1C;
+  --color-brand-darkSurface: #16171A;
+  --color-brand-lightBg: #F5F5F5;
+  --color-brand-lightSurface: #EFEFE7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom Scrollbar styled for the custom warm palette */
+::-webkit-scrollbar {
+  width: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #1C1C1C;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2D2D2D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D3D3CB;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #98CD00;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1C1C1C;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Continuous pulse animation for availability badge using updated Lime brand colors */
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(152, 205, 0, 0.7); }
+  50% { transform: scale(1.2); opacity: 0.8; box-shadow: 0 0 10px 4px rgba(152, 205, 0, 0); }
+}
+.pulse-dot {
+  animation: pulse-glow 2s infinite ease-in-out;
 }
