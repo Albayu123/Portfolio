@@ -56,7 +56,7 @@ export default function Footer() {
       {/* Copyright banner */}
       <div className="flex flex-col sm:flex-row items-center justify-between pt-12 border-t mt-12 text-[10px] sm:text-xs font-semibold border-black/5 text-gray-750 dark:border-white/5 dark:text-gray-500">
         <span className="mb-4 sm:mb-0 font-header font-extrabold tracking-wide text-sm text-black dark:text-white">
-          ALIEF.DEV
+          Alief.Dev
         </span>
         <span>&copy; {currentYear} ALIEF.DEV. Crafted with technical precision.</span>
       </div>

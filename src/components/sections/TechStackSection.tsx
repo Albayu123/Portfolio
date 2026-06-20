@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { techStack } from '@/data/portfolio';
-import { Atom, Palette, Server, Activity, Code2 } from 'lucide-react';
+import { Atom, Palette, Server, Terminal, Code2 } from 'lucide-react';
 
 export default function TechStackSection() {
   const renderIcon = (iconName: string) => {
@@ -15,8 +15,8 @@ export default function TechStackSection() {
         return <Palette className={iconClass} />;
       case 'server':
         return <Server className={iconClass} />;
-      case 'activity':
-        return <Activity className={iconClass} />;
+      case 'terminal':
+        return <Terminal className={iconClass} />;
       case 'code-2':
         return <Code2 className={iconClass} />;
       case 'figma':

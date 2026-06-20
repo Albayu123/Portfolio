@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="font-header font-extrabold text-2xl tracking-tight hover:opacity-80 transition-opacity">
-          ALIEF.DEV
+          Alief.Dev
         </a>
 
         {/* Desktop Menu */}
