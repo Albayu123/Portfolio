@@ -28,7 +28,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-8 text-xs font-mono font-semibold uppercase tracking-wider">
           {menuItems.map((item) => (
             <a
               key={item.name}
@@ -107,7 +107,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium hover:text-brand-lime transition-colors py-2"
+                  className="text-sm font-mono font-semibold uppercase tracking-wider hover:text-brand-lime transition-colors py-2"
                 >
                   {item.name}
                 </a>
