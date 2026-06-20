@@ -15,7 +15,7 @@ export default function HeroSection() {
         className="inline-flex items-center space-x-2 bg-brand-lightSurface dark:bg-brand-darkSurface border border-black/5 dark:border-white/5 px-4 py-1.5 rounded-full mb-8"
       >
         <span className="w-2.5 h-2.5 rounded-full bg-brand-lime pulse-dot"></span>
-        <span className="text-xs font-semibold uppercase tracking-wider opacity-90 text-black dark:text-white">
+        <span className="text-xs font-mono font-semibold uppercase tracking-wider opacity-90 text-black dark:text-white">
           AVAILABLE FOR PROJECTS
         </span>
       </motion.div>

@@ -41,7 +41,7 @@ export default function ProjectsSection() {
               {/* Overlay details */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent p-8 flex flex-col justify-end">
                 {project.techStack && project.techStack.length > 0 && (
-                  <div className="inline-flex items-center justify-center bg-black/65 backdrop-blur-md border border-white/10 rounded-full px-4 py-1 text-[10px] font-bold tracking-widest text-brand-lime uppercase w-fit mb-4">
+                  <div className="inline-flex items-center justify-center bg-black/65 backdrop-blur-md border border-white/10 rounded-full px-4 py-1 text-[10px] font-mono font-bold tracking-widest text-brand-lime uppercase w-fit mb-4">
                     {project.techStack[0]}
                   </div>
                 )}

@@ -37,7 +37,7 @@ export default function ExperienceSection() {
                     {exp.company}
                   </p>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-full w-fit self-start sm:self-center bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400">
+                <span className="text-xs font-mono font-semibold px-3 py-1 rounded-full w-fit self-start sm:self-center bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400">
                   {exp.period}
                 </span>
               </div>
@@ -51,7 +51,7 @@ export default function ExperienceSection() {
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400"
+                      className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md uppercase tracking-wider bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400"
                     >
                       {skill}
                     </span>

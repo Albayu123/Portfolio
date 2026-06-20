@@ -54,8 +54,8 @@ export const personalInfo: PersonalInfo = {
     "Dengan pemahaman mendalam tentang arsitektur back-end yang kuat serta kepedulian yang tinggi terhadap detail transisi mikro dan animasi front-end, saya berkomitmen menghadirkan solusi digital secara end-to-end yang mampu membantu bisnis berkembang secara eksponensial."
   ],
   stats: {
-    experience: "3+",
-    projects: "15+"
+    experience: "2+",
+    projects: "10+"
   },
   socials: {
     linkedin: "https://linkedin.com",

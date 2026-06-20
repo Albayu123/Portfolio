@@ -3,8 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: var(--font-inter), sans-serif;
-  --font-header: var(--font-plus-jakarta-sans), sans-serif;
+  --font-sans: var(--font-satoshi), sans-serif;
+  --font-header: var(--font-syne), sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
 
   --color-brand-lime: #98CD00;
   --color-brand-darkBg: #1C1C1C;
