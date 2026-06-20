@@ -37,7 +37,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Alief Albayu | Portfolio",
+  title: "Alief.dev",
   description: "Fullstack Designer & Developer focusing on motion and interaction. Crafting high-fidelity products with technical precision and avant-garde aesthetics.",
 };
 
