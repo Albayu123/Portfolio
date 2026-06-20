@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="id" className="dark" suppressHydrationWarning>
       <body
-        className={`${satoshi.variable} ${syne.variable} ${spaceMono.variable} font-sans antialiased bg-brand-darkBg text-white transition-colors duration-300 min-h-screen flex flex-col`}
+        className={`${satoshi.variable} ${syne.variable} ${spaceMono.variable} font-sans antialiased bg-brand-lightBg text-black dark:bg-brand-darkBg dark:text-white transition-colors duration-300 min-h-screen flex flex-col`}
       >
         {children}
       </body>

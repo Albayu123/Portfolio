@@ -89,7 +89,7 @@ export const techStack: TechItem[] = [
   { name: "Tailwind", icon: "palette" },
   { name: "Figma", icon: "figma" },
   { name: "Node.js", icon: "server" },
-  { name: "Express.js", icon: "terminal" },
+  { name: "Express", icon: "terminal" },
   { name: "TypeScript", icon: "code-2" }
 ];
 
