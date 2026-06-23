@@ -45,6 +45,8 @@ export default function Footer() {
           </a>
           <a
             href={personalInfo.socials.email}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative py-2 transition-colors text-black dark:text-white hover:text-brand-lime dark:hover:text-brand-lime"
           >
             EMAIL

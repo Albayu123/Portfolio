@@ -38,7 +38,7 @@ export default function AboutSection() {
         {/* Bio and Stats */}
         <div className="md:col-span-7 space-y-6 text-black dark:text-white">
           <h3 className="font-header font-extrabold text-2xl md:text-3xl tracking-tight leading-snug">
-            Bridging the Gap Between Design and Scalable Engineering.
+            Turning Ideas Into Scalable Web Applications
           </h3>
 
           {personalInfo.bio.map((paragraph, index) => (

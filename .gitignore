@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# agents metadata
+CLAUDE.md
+AGENTS.md
+
+# Editor Settings (Opsional)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+CLAUDE.md
+AGENTS.md

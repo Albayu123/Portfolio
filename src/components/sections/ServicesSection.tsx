@@ -25,7 +25,7 @@ export default function ServicesSection() {
       <div className="flex items-center space-x-3 mb-10">
         <span className="w-1 h-5 bg-brand-lime rounded-full"></span>
         <h2 className="font-header font-extrabold text-sm uppercase tracking-wider text-black dark:text-white">
-          SERVICES
+          EXPERTISE
         </h2>
       </div>
 

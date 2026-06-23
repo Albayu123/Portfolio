@@ -48,20 +48,20 @@ export interface PersonalInfo {
 export const personalInfo: PersonalInfo = {
   name: "Muhammad Alief Albayu",
   title: "Fullstack Designer & Developer",
-  subtitle: "Fullstack Designer & Developer focusing on motion and interaction. Crafting high-fidelity products with technical precision and avant-garde aesthetics.",
+  subtitle: "Fullstack Developer passionate about creating scalable web applications, designing efficient backend systems, and delivering seamless user experiences.",
   bio: [
-    "Halo! Saya Alief, seorang Fullstack Developer yang bersemangat dalam membangun produk digital interaktif yang tidak hanya berkinerja tinggi di sisi server, tetapi juga indah dan intuitif saat digunakan oleh pengguna.",
-    "Dengan pemahaman mendalam tentang arsitektur back-end yang kuat serta kepedulian yang tinggi terhadap detail transisi mikro dan animasi front-end, saya berkomitmen menghadirkan solusi digital secara end-to-end yang mampu membantu bisnis berkembang secara eksponensial."
+    "Halo! Saya Alief, seorang Fullstack Developer yang memiliki minat besar dalam membangun aplikasi web modern. Saya menikmati proses mengubah ide menjadi produk digital yang dapat digunakan secara nyata, mulai dari perancangan database, pengembangan API, hingga implementasi antarmuka pengguna yang responsif.",
+    "Saat ini saya terus mengembangkan kemampuan di bidang Fullstack Development melalui berbagai proyek pribadi, kolaborasi tim, dan pengalaman dari program DBS Coding Camp. Saya percaya bahwa teknologi yang baik bukan hanya berjalan dengan baik di belakang layar, tetapi juga mampu memberikan pengalaman yang sederhana dan bermanfaat bagi pengguna."
   ],
   stats: {
     experience: "2+",
     projects: "10+"
   },
   socials: {
-    linkedin: "https://linkedin.com",
-    github: "https://github.com",
-    instagram: "https://instagram.com",
-    email: "mailto:aliefalbayu@example.com"
+    linkedin: "https://www.linkedin.com/in/alief-albayu-0a7306363/",
+    github: "https://github.com/Albayu123",
+    instagram: "https://www.instagram.com/4lieffal_?igsh=aHpuZnN4ZnUyZjZq",
+    email: "mailto:aliefalbayu2@gmail.com"
   }
 };
 
@@ -71,15 +71,15 @@ export const experiences: Experience[] = [
     role: "Full-Stack Developer Mentee",
     company: "Coding Camp 2026 by DBS Foundation",
     period: "Feb 2026 - Jul 2026",
-    description: "Mengikuti program pembinaan intensif berskala nasional yang berfokus pada kesiapan industri full-stack development. Mengembangkan arsitektur aplikasi web modern, mempelajari standarisasi API, integrasi basis data, serta penerapan clean-code dengan fokus pada efisiensi skala besar.",
+    description: "Participated in an intensive full-stack development program focused on modern web technologies, RESTful API development, database integration, and collaborative software engineering practices.",
     skills: ["Full-Stack Web Development", "React", "Express.js"]
   },
   {
     id: "exp-2",
-    role: "Independent Full-Stack Developer",
-    company: "Freelance / Personal projects",
+    role: "Self-Taught Web Developer",
+    company: "Personal Projects & Learning",
     period: "2024 - 2025",
-    description: "Merancang, merakit, dan merilis aplikasi web interaktif berskala mikro hingga menengah secara mandiri. Berfokus pada optimalisasi UI responsif dan efisiensi query server.",
+    description: "Started my web development journey by learning HTML, CSS, JavaScript, PHP, and Git. Built small projects such as CRUD applications and productivity tools while developing a strong foundation in modern web development.",
     skills: []
   }
 ];
@@ -97,19 +97,19 @@ export const services: Service[] = [
   {
     id: "srv-1",
     title: "Front-end Development",
-    description: "Membangun tampilan antarmuka yang sangat responsif, fluid, interaktif, dengan optimasi frame rate tinggi dan transisi mikro yang elegan.",
+    description: "Building responsive and interactive web interfaces using modern JavaScript frameworks and best UI practices.",
     icon: "layout"
   },
   {
     id: "srv-2",
     title: "Back-end Engineering",
-    description: "Mengembangkan arsitektur server yang andal, perancangan API RESTful yang aman, manajemen basis data, serta optimalisasi fungsionalitas sistem.",
+    description: "Designing scalable APIs, authentication systems, and database architectures that power reliable applications.",
     icon: "database"
   },
   {
     id: "srv-3",
-    title: "UI/UX & Motion Design",
-    description: "Mendesain diagram alur pengguna (user journey), rancang grafis berstandar premium dengan prinsip visual yang clean, minimalis, dan futuristik.",
+    title: "Full-stack Apllication Development",
+    description: "Creating complete end-to-end solutions from database design and backend logic to frontend implementation and deployment.",
     icon: "sparkles"
   }
 ];
