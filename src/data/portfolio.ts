@@ -50,8 +50,8 @@ export const personalInfo: PersonalInfo = {
   title: "Fullstack Designer & Developer",
   subtitle: "Fullstack Developer passionate about creating scalable web applications, designing efficient backend systems, and delivering seamless user experiences.",
   bio: [
-    "Halo! Saya Alief, seorang Fullstack Developer yang memiliki minat besar dalam membangun aplikasi web modern. Saya menikmati proses mengubah ide menjadi produk digital yang dapat digunakan secara nyata, mulai dari perancangan database, pengembangan API, hingga implementasi antarmuka pengguna yang responsif.",
-    "Saat ini saya terus mengembangkan kemampuan di bidang Fullstack Development melalui berbagai proyek pribadi, kolaborasi tim, dan pengalaman dari program DBS Coding Camp. Saya percaya bahwa teknologi yang baik bukan hanya berjalan dengan baik di belakang layar, tetapi juga mampu memberikan pengalaman yang sederhana dan bermanfaat bagi pengguna."
+    "Hi, I'm Alief, a Fullstack Developer passionate about building modern web applications and solving real-world problems through technology. I enjoy working across the entire development lifecycle, from designing databases and building APIs to creating responsive user interfaces.",
+    "Currently, I am continuing to develop my skills in full-stack development through various personal projects, team collaborations, and the experience I gained from the DBS Coding Camp program. I believe that good technology not only works well behind the scenes, but also provides a simple and valuable experience for users."
   ],
   stats: {
     experience: "2+",
