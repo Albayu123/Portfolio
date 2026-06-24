@@ -55,7 +55,7 @@ export const personalInfo: PersonalInfo = {
   ],
   stats: {
     experience: "2+",
-    projects: "10+"
+    projects: "5+"
   },
   socials: {
     linkedin: "https://www.linkedin.com/in/alief-albayu-0a7306363/",
@@ -117,18 +117,18 @@ export const services: Service[] = [
 export const projects: Project[] = [
   {
     id: "prj-1",
-    title: "Nexus Dashboard",
-    category: "SaaS / Interface",
-    techStack: ["REACT & CHART.JS"],
-    imageUrl: "https://placehold.co/1200x600/16171A/98cd00?text=Nexus+Dashboard+Preview",
-    redirectUrl: "#"
+    title: "Fintrack: Personal & Business Finance Tracker",
+    category: "Fintech / Dashboard",
+    techStack: ["Next.js & Express.js"],
+    imageUrl: "/images/projects/Fintrack.png",
+    redirectUrl: "https://fin-track.my.id"
   },
   {
     id: "prj-2",
-    title: "Echo Studio",
-    category: "Web / Audio",
-    techStack: ["THREE.JS & WEB AUDIO"],
-    imageUrl: "https://placehold.co/1200x400/16171A/98cd00?text=Echo+Studio+Preview",
-    redirectUrl: "#"
+    title: "Mint Pomodoro: Focus Timer",
+    category: "Productivity / Web App",
+    techStack: ["React & Tailwind CSS"],
+    imageUrl: "/images/projects/MintPomo.png",
+    redirectUrl: "https://mint-pomodor.netlify.app/"
   }
 ];
