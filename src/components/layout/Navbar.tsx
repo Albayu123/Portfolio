@@ -54,12 +54,6 @@ export default function Navbar() {
               <Moon className="w-5 h-5 text-black" />
             )}
           </button>
-          <a
-            href="#contact"
-            className="bg-brand-lime hover:bg-white text-black font-semibold text-xs py-2.5 px-5 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-brand-lime/10"
-          >
-            Get in touch
-          </a>
         </div>
 
         {/* Mobile Navbar Controls */}
