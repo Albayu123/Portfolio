@@ -1,36 +1,54 @@
 # Personal Portfolio Website
 
-🚧 Work in Progress
+Personal portfolio for **Muhammad Alief Albayu** — Fullstack Developer & Designer.
 
-This repository contains the source code for my personal portfolio website.
+Built with Next.js 16 App Router, following modern React best practices.
 
-The portfolio is currently under active development and will be used to showcase my:
+## Sections
 
-* Professional profile
-* Technical skills
-* Development experience
-* Personal and collaborative projects
-* Contact information
-
-## Planned Features
-
-* Hero Section
-* About Me
-* Technical Expertise
-* Experience Timeline
-* Project Showcase
-* Contact Section
+- Hero — animated entrance with availability badge
+- About — profile, bio, stats
+- Experience — timeline
+- Tech Stack — skills grid
+- Projects — project cards with image overlays
+- Services / Expertise
+- Contact / Footer
 
 ## Tech Stack
 
-* React / Next.js
-* TypeScript
-* Tailwind CSS
-* Framer Motion
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 (CSS-first config) |
+| Animations | CSS `@keyframes` + Framer Motion (Toast only) |
+| Icons | Lucide React + inline SVG |
+| Fonts | Satoshi (local), Syne, Space Mono (Google) |
+| Testing | Vitest + jsdom |
 
+## Architecture
 
-## Status
+- **Server Components by default** — client boundary only where interactivity is needed (Navbar, Projects, Toast)
+- **Static data** — all content lives in `src/data/portfolio.ts`
+- **Dynamic import** — Toast (Framer Motion) lazy-loaded with `ssr: false`
+- **SEO** — Open Graph, Twitter Card, canonical URL, robots metadata
+- **Image optimization** — `next/image` with `priority`, `sizes`, blur placeholder
 
-This project is currently being developed and continuously improved.
+## Getting Started
 
-More updates will be added as the portfolio evolves.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Command | Action |
+|---------|--------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run Vitest |

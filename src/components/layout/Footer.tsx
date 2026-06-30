@@ -1,11 +1,8 @@
-'use client';
-
 import React from 'react';
 import { personalInfo } from '@/data/portfolio';
+import CopyrightYear from './CopyrightYear';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer id="contact" className="max-w-7xl mx-auto w-full px-6 py-16 border-t border-black/5 dark:border-white/5 mt-20">
       <div className="flex flex-col items-center justify-center text-center py-12 md:py-20">
@@ -60,7 +57,7 @@ export default function Footer() {
         <span className="mb-4 sm:mb-0 font-header font-extrabold tracking-wide text-sm text-black dark:text-white">
           Alief.Dev
         </span>
-        <span>&copy; {currentYear} ALIEF.DEV. Crafted with technical precision.</span>
+        <CopyrightYear />
       </div>
     </footer>
   );

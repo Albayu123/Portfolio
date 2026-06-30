@@ -118,15 +118,7 @@ export default function Navbar() {
               ))}
               <div
                 className={`pt-4 border-t ${darkMode ? "border-white/10" : "border-black/10"}`}
-              >
-                <a
-                  href="#contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="inline-block bg-brand-lime text-black font-semibold text-sm py-3 px-8 rounded-full shadow-md w-full max-w-xs mx-auto"
-                >
-                  Get in touch
-                </a>
-              </div>
+              ></div>
             </div>
           </motion.div>
         )}

@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# working notes (not for production)
+progress.md
+
 # agents metadata
 CLAUDE.md
 AGENTS.md
