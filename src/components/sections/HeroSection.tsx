@@ -25,7 +25,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="font-header font-extrabold text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.05] mb-8 max-w-5xl text-black dark:text-white"
+        className="font-header font-extrabold text-[clamp(2.25rem,4vw+1rem,6rem)] sm:text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.05] mb-8 max-w-5xl text-black dark:text-white"
       >
         BUILDING DIGITAL SOLUTIONS THAT SOLVE REAL PROBLEMS.
       </motion.h1>

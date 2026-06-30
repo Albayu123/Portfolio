@@ -1,12 +1,13 @@
-'use client';
-/* eslint-disable @next/next/no-img-element */
-
-import React from 'react';
-import { personalInfo } from '@/data/portfolio';
+import React from "react";
+import Image from "next/image";
+import { personalInfo } from "@/data/portfolio";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-16 border-t border-black/5 dark:border-white/5">
+    <section
+      id="about"
+      className="max-w-7xl mx-auto px-6 py-16 border-t border-black/5 dark:border-white/5"
+    >
       <div className="flex items-center space-x-3 mb-12">
         <span className="w-1 h-5 bg-brand-lime rounded-full"></span>
         <h2 className="font-header font-extrabold text-sm uppercase tracking-wider text-black dark:text-white">
@@ -17,17 +18,18 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         {/* Profile Photo */}
         <div className="md:col-span-5 flex justify-center">
-          <div className="relative group w-full max-w-[360px] aspect-square rounded-3xl overflow-hidden border-2 border-dashed transition-all duration-500 hover:border-brand-lime/50 border-black/10 bg-brand-lightSurface dark:border-white/10 dark:bg-brand-darkSurface">
-            <img
+          <div className="relative group w-full max-w-90 aspect-square rounded-3xl overflow-hidden border-2 border-dashed transition-all duration-500 hover:border-brand-lime/50 border-black/10 bg-brand-lightSurface dark:border-white/10 dark:bg-brand-darkSurface">
+            <Image
               src="/images/profile/my-notion-face-transparent.png"
               alt={`${personalInfo.name} Portrait`}
-              className="w-full h-full object-cover transition-all duration-700 ease-out filter grayscale group-hover:grayscale-0 group-hover:scale-105"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://placehold.co/600x600/16171A/8A8F98?text=Profile+Photo';
-              }}
+              fill
+              sizes="(max-width: 768px) 100vw, 360px"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgMTAgNSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE2MTcxQSIvPjwvc3ZnPg=="
+              className="object-cover transition-all duration-700 ease-out filter grayscale group-hover:grayscale-0 group-hover:scale-105"
             />
             {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
               <span className="text-white text-xs font-semibold tracking-wider uppercase">
                 {personalInfo.name}
               </span>
@@ -56,7 +58,7 @@ export default function AboutSection() {
               <span className="block font-header font-extrabold text-2xl text-brand-lime">
                 {personalInfo.stats.experience}
               </span>
-              <span className="text-[10px] md:text-xs tracking-wider uppercase font-semibold text-gray-600 dark:text-gray-400">
+              <span className="text-xs tracking-wider uppercase font-semibold text-gray-600 dark:text-gray-400">
                 Years of Experience
               </span>
             </div>
@@ -64,7 +66,7 @@ export default function AboutSection() {
               <span className="block font-header font-extrabold text-2xl text-brand-lime">
                 {personalInfo.stats.projects}
               </span>
-              <span className="text-[10px] md:text-xs tracking-wider uppercase font-semibold text-gray-600 dark:text-gray-400">
+              <span className="text-xs tracking-wider uppercase font-semibold text-gray-600 dark:text-gray-400">
                 Projects Completed
               </span>
             </div>

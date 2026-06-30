@@ -37,8 +37,44 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Alief.dev",
-  description: "Fullstack Designer & Developer focusing on motion and interaction. Crafting high-fidelity products with technical precision and avant-garde aesthetics.",
+  metadataBase: new URL("https://alief.dev"),
+  title: {
+    default: "Muhammad Alief Albayu | Fullstack Developer",
+    template: "%s | Muhammad Alief Albayu",
+  },
+  description:
+    "Fullstack developer specializing in building scalable web applications, designing efficient APIs, and crafting intuitive, responsive user experiences.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Muhammad Alief Albayu | Fullstack Developer",
+    description:
+      "Fullstack developer specializing in building scalable web applications, designing efficient APIs, and crafting intuitive, responsive user experiences.",
+    url: "/",
+    siteName: "Muhammad Alief Albayu Portfolio",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "/images/profile/profil.jpg",
+        width: 600,
+        height: 600,
+        alt: "Muhammad Alief Albayu - Fullstack Developer & Designer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Muhammad Alief Albayu | Fullstack Developer",
+    description:
+      "Fullstack developer specializing in building scalable web applications, designing efficient APIs, and crafting intuitive, responsive user experiences.",
+    images: ["/images/profile/profil.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

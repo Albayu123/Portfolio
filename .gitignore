@@ -43,6 +43,8 @@ next-env.d.ts
 # agents metadata
 CLAUDE.md
 AGENTS.md
+.agents/
+skills-lock.json
 
 # Editor Settings (Opsional)
 .vscode/
@@ -52,6 +54,3 @@ AGENTS.md
 *.njsproj
 *.sln
 *.sw?
-
-CLAUDE.md
-AGENTS.md

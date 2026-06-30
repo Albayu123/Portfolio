@@ -1,29 +1,37 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useApp } from '@/context/AppContext';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Menu, X } from 'lucide-react';
+import React from "react";
+import { useApp } from "@/context/AppContext";
+import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Moon, Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const { darkMode, toggleDarkMode, mobileMenuOpen, setMobileMenuOpen } = useApp();
+  const { darkMode, toggleDarkMode, mobileMenuOpen, setMobileMenuOpen } =
+    useApp();
 
   const menuItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Skills', href: '#tech-stack' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#tech-stack" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <header className={`sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-300 border-b ${
-      darkMode ? 'bg-brand-darkBg/80 border-white/5' : 'bg-brand-lightBg/80 border-black/5'
-    }`}>
+    <header
+      className={`sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-300 border-b ${
+        darkMode
+          ? "bg-brand-darkBg/80 border-white/5"
+          : "bg-brand-lightBg/80 border-black/5"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="font-header font-extrabold text-2xl tracking-tight hover:opacity-80 transition-opacity">
+        <a
+          href="#"
+          className="font-header font-extrabold text-2xl tracking-tight hover:opacity-80 transition-opacity"
+        >
           Alief.Dev
         </a>
 
@@ -36,7 +44,7 @@ export default function Navbar() {
               className="relative py-2 transition-colors hover:text-black dark:hover:text-brand-lime group animate-none"
             >
               {item.name}
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-lime transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-lime transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </nav>
@@ -90,9 +98,11 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className={`md:hidden absolute top-20 left-0 w-full shadow-2xl border-b z-40 ${
-              darkMode ? 'bg-brand-darkBg/95 border-white/5' : 'bg-brand-lightBg/95 border-black/5'
+              darkMode
+                ? "bg-brand-darkBg/95 border-white/5"
+                : "bg-brand-lightBg/95 border-black/5"
             }`}
           >
             <div className="px-6 py-8 flex flex-col space-y-6 text-center">
@@ -106,7 +116,9 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
-              <div className={`pt-4 border-t ${darkMode ? 'border-white/10' : 'border-black/10'}`}>
+              <div
+                className={`pt-4 border-t ${darkMode ? "border-white/10" : "border-black/10"}`}
+              >
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}

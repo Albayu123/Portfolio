@@ -12,6 +12,8 @@
   --color-brand-darkSurface: #16171A;
   --color-brand-lightBg: #F5F5F5;
   --color-brand-lightSurface: #EFEFE7;
+
+  --max-w-90: 22.5rem;
 }
 
 html {

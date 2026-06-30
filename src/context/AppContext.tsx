@@ -1,6 +1,9 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+const Toast = dynamic(() => import('@/components/ui/Toast'), { ssr: false });
 
 interface AppContextType {
   darkMode: boolean;
@@ -50,6 +53,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       }}
     >
       {children}
+      <Toast />
     </AppContext.Provider>
   );
 }

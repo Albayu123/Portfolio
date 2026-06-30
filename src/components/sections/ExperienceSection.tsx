@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { experiences } from '@/data/portfolio';
 
@@ -13,17 +11,19 @@ export default function ExperienceSection() {
         </h2>
       </div>
 
-      <div className="relative border-l pl-6 ml-3 space-y-8 border-black/10 dark:border-white/10">
+      <div className="relative">
+        {/* Vertical timeline line */}
+        <div className="absolute left-[7px] top-0 bottom-0 w-0.5 bg-black/10 dark:bg-white/10"></div>
         {/* Glowing line top decoration */}
-        <div className="absolute -left-[1.5px] top-0 w-[2px] h-12 bg-gradient-to-b from-brand-lime to-transparent"></div>
+        <div className="absolute left-[7px] top-0 w-0.5 h-12 bg-gradient-to-b from-brand-lime to-transparent"></div>
 
         {experiences.map((exp, index) => (
-          <div key={exp.id} className="relative group">
+          <div key={exp.id} className="relative pl-8 pb-8 last:pb-0 group">
             {/* Timeline Dot */}
             {index === 0 ? (
-              <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 transition-all duration-300 bg-brand-lime border-brand-lime group-hover:scale-125 group-hover:shadow-[0_0_12px_#98CD00]"></div>
+              <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 transition-all duration-300 bg-brand-lime border-brand-lime group-hover:scale-125 group-hover:shadow-[0_0_12px_#98CD00]"></div>
             ) : (
-              <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 transition-all duration-300 bg-brand-lightBg border-black/20 group-hover:border-brand-lime dark:bg-brand-darkBg dark:border-white/20"></div>
+              <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 transition-all duration-300 bg-brand-lightBg border-black/20 group-hover:border-brand-lime dark:bg-brand-darkBg dark:border-white/20"></div>
             )}
 
             {/* Content Card */}
@@ -51,7 +51,7 @@ export default function ExperienceSection() {
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md uppercase tracking-wider bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400"
+                      className="text-xs font-mono font-bold px-2.5 py-1 rounded-md uppercase tracking-wider bg-black/5 text-gray-700 dark:bg-white/5 dark:text-gray-400"
                     >
                       {skill}
                     </span>

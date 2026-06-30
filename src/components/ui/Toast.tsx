@@ -25,7 +25,7 @@ export default function Toast() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.95 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          className={`fixed bottom-6 right-6 z-50 p-4 rounded-xl border flex items-center space-x-3 shadow-2xl backdrop-blur-md max-w-sm ${
+          className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 left-4 sm:left-auto z-50 p-4 rounded-xl border flex items-center space-x-3 shadow-2xl backdrop-blur-md max-w-sm ${
             darkMode
               ? 'bg-brand-darkSurface/95 border-brand-lime/20 text-white'
               : 'bg-white/95 border-brand-lime/40 text-black'

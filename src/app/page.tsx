@@ -7,13 +7,12 @@ import TechStackSection from "@/components/sections/TechStackSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import Footer from "@/components/layout/Footer";
-import Toast from "@/components/ui/Toast";
 
 export default function Home() {
   return (
     <AppProvider>
       <Navbar />
-      <main className="flex-grow">
+      <main className="grow">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
@@ -22,7 +21,6 @@ export default function Home() {
         <ServicesSection />
       </main>
       <Footer />
-      <Toast />
     </AppProvider>
   );
 }

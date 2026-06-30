@@ -1,0 +1,38 @@
+'use client';
+
+import { useEffect } from 'react';
+
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  useEffect(() => {
+    console.error(error);
+  }, [error]);
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-brand-lightBg dark:bg-brand-darkBg">
+      <div className="flex items-center space-x-3 mb-6">
+        <span className="w-1 h-5 bg-brand-lime rounded-full" />
+        <span className="font-header font-extrabold text-sm uppercase tracking-wider text-black dark:text-white">
+          ERROR
+        </span>
+      </div>
+      <h1 className="font-header font-extrabold text-4xl sm:text-5xl md:text-7xl tracking-tight mb-4 text-black dark:text-white text-center">
+        Something went wrong
+      </h1>
+      <p className="text-sm md:text-base text-gray-800 dark:text-gray-300 mb-8 text-center max-w-md">
+        An unexpected error occurred. Please try again.
+      </p>
+      <button
+        onClick={reset}
+        className="inline-flex items-center justify-center bg-brand-lime text-black font-semibold text-sm py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl shadow-brand-lime/20 cursor-pointer"
+      >
+        Try Again
+      </button>
+    </div>
+  );
+}
