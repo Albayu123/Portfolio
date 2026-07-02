@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto px-6 py-16 border-t border-black/5 dark:border-white/5"
+      className="max-w-7xl mx-auto px-6 py-16 bg-brand-lightSurface/30 dark:bg-brand-darkSurface/20"
     >
       <div className="flex items-center space-x-3 mb-12">
         <span className="w-1 h-5 bg-brand-lime rounded-full"></span>
@@ -18,7 +18,7 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         {/* Profile Photo */}
         <div className="md:col-span-5 flex justify-center">
-          <div className="relative group w-full max-w-90 aspect-square rounded-3xl overflow-hidden border-2 border-dashed transition-all duration-500 hover:border-brand-lime/50 border-black/10 bg-brand-lightSurface dark:border-white/10 dark:bg-brand-darkSurface">
+          <div className="relative group w-full max-w-90 aspect-square rounded-3xl overflow-hidden border-2 border-black/5 dark:border-white/5 shadow-lg dark:shadow-2xl dark:shadow-black/40 bg-brand-lightSurface dark:bg-brand-darkSurface">
             <Image
               src="/images/profile/my-notion-face-transparent.png"
               alt={`${personalInfo.name} Portrait`}

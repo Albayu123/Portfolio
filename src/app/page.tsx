@@ -7,6 +7,7 @@ import TechStackSection from "@/components/sections/TechStackSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import Footer from "@/components/layout/Footer";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Home() {
   return (
@@ -14,11 +15,11 @@ export default function Home() {
       <Navbar />
       <main className="grow">
         <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <TechStackSection />
-        <ProjectsSection />
-        <ServicesSection />
+        <Reveal><AboutSection /></Reveal>
+        <Reveal><ExperienceSection /></Reveal>
+        <Reveal><TechStackSection /></Reveal>
+        <Reveal><ProjectsSection /></Reveal>
+        <Reveal><ServicesSection /></Reveal>
       </main>
       <Footer />
     </AppProvider>

@@ -48,6 +48,7 @@ CLAUDE.md
 AGENTS.md
 .agents/
 skills-lock.json
+.kiro/
 
 # Editor Settings (Opsional)
 .vscode/
